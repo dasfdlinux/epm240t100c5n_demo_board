@@ -52,13 +52,15 @@ set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "3.3-V LVTTL"
 set_location_assignment PIN_12 -to clk_in
-set_global_assignment -name BDF_FILE epm240_template.bdf
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
 set_location_assignment PIN_77 -to led_0
-set_global_assignment -name VHDL_FILE ../altera_modules/stepper_motor_4_phase/stepper_motor_4_phase.vhd
 set_location_assignment PIN_2 -to pin_2
 set_location_assignment PIN_3 -to pin_3
 set_location_assignment PIN_4 -to pin_4
 set_location_assignment PIN_5 -to pin_5
 set_location_assignment PIN_6 -to pin_6
+set_global_assignment -name VHDL_FILE "../Altera-Modules/clock_divider/clock_divider.vhd"
+set_global_assignment -name BDF_FILE epm240_template.bdf
 set_global_assignment -name CDF_FILE output_files/Chain2.cdf
+set_global_assignment -name CDF_FILE Chain2.cdf
+set_global_assignment -name CDF_FILE output_files/Chain4.cdf
